@@ -21,7 +21,11 @@
         <script src="https://code.jquery.com/jquery.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+        <style>
+            .jumbotron{
+               background-color:#5bc0de; 
+            }
+        </style>
     </head>
     <body>
         <div class="container">
