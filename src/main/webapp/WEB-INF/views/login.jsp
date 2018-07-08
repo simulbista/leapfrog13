@@ -35,18 +35,18 @@
                 <form method = "post" action = "" class="form-horizontal">
                     <div class="form-group">
                         <label for="name" class="col-sm-2 control-label">User Name</label>
-                        <div class="col-sm-3">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <input type="text" class="form-control" name ="username" placeholder="UserName">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="password" class="col-sm-2 control-label">Password</label>
-                        <div class="col-sm-3">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <input type="password" class="form-control" name="password" placeholder="Password">
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-2">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </div>
