@@ -10,6 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
         <title>JSP Page</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -23,43 +24,33 @@
 
     </head>
     <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>LOGIN</h1>
+            </div>
+            <c:if test = "${param.error!=null}">
+                <div class="alert alert-danger" role="alert">Invalid Username/Password!!!</div>
+            </c:if>
 
-        <h1><span class="label label-default" style="text-align: center">LOGIN!</span></h1>
-        <c:if test = "${param.error!=null}">
-            <div class="alert alert-danger" role="alert">Invalid Username/Password!!!</div>
-        </c:if>
-        <!--        <form method ="post" action="">
-                    <div class="input-group">
-                        <span class="input-group-addon" id="basic-addon1">Name</span>
-                        <input type="text" name = "username" width="50px" placeholder="Your name goes here!" aria-describedby="basic-addon1"/>
+            <form method = "post" action = "" class="form-horizontal">
+                <div class="form-group">
+                    <label for="name" class="col-sm-2 control-label">User Name</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" name ="username" placeholder="UserName">
                     </div>
-                    <div class="input-group">
-                        <span class="input-group-addon" id="basic-addon1" width="25px">Password</span>
-                        <input type="password" name = "password" width="50px" placeholder="Your password goes here!" aria-describedby="basic-addon1"/>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-3">
+                        <input type="password" class="form-control" name="password" placeholder="Password">
                     </div>
-                    <div>
-                        <button type="submit" class="btn btn-primary">login</button>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-2">
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
-                </form>-->
-
-        <form method = "post" action = "" class="form-horizontal">
-            <div class="form-group">
-                <label for="name" class="col-sm-2 control-label">User Name</label>
-                <div class="col-sm-3">
-                    <input type="text" class="form-control" name ="username" placeholder="UserName">
                 </div>
-            </div>
-            <div class="form-group">
-                <label for="password" class="col-sm-2 control-label">Password</label>
-                <div class="col-sm-3">
-                    <input type="password" class="form-control" name="password" placeholder="Password">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-2">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-            </div>
-        </form>
-    </body>
+        </div>
+    </form>
+</body>
 </html>
