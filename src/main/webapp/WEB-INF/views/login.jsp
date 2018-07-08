@@ -31,25 +31,26 @@
             <c:if test = "${param.error!=null}">
                 <div class="alert alert-danger" role="alert">Invalid Username/Password!!!</div>
             </c:if>
-
-            <form method = "post" action = "" class="form-horizontal">
-                <div class="form-group">
-                    <label for="name" class="col-sm-2 control-label">User Name</label>
-                    <div class="col-sm-3">
-                        <input type="text" class="form-control" name ="username" placeholder="UserName">
+            <div class="jumbotron">
+                <form method = "post" action = "" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">User Name</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" name ="username" placeholder="UserName">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="password" class="col-sm-2 control-label">Password</label>
-                    <div class="col-sm-3">
-                        <input type="password" class="form-control" name="password" placeholder="Password">
+                    <div class="form-group">
+                        <label for="password" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-3">
+                            <input type="password" class="form-control" name="password" placeholder="Password">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-2">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-2">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
                     </div>
-                </div>
+            </div>
         </div>
     </form>
 </body>
