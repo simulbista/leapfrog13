@@ -36,7 +36,7 @@ public class BannedFilter implements Filter {
 //            server goes to infinite loop as the banned page will also apply 
 //            this banned filter, to avoid this we use another condition
 //            after && in if()
-        if (req.getRemoteAddr().equals("192.168.100.8")
+        if (req.getRemoteAddr().equals("27.34.104.4")
                 && !req.getRequestURI().contains("/banned")) {
             resp.sendRedirect("/banned");
         } else {
