@@ -35,7 +35,7 @@
             <c:if test = "${param.error!=null}">
                 <div class="alert alert-danger" role="alert">Invalid Username/Password!!!</div>
             </c:if>
-            <di  v class="jumbotron">
+            <div class="jumbotron">
                 <form method = "post" action = "" class="form-horizontal">
                     <div class="form-group">
                         <label for="name" class="col-sm-2 control-label">User Name</label>
