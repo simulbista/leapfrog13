@@ -32,7 +32,7 @@ public class BannedFilter implements Filter {
             throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse resp = (HttpServletResponse) response;
-        System.console().writer().println("Ip : " + request.getRemoteAddr());
+        
 
 //            server goes to infinite loop as the banned page will also apply 
 //            this banned filter, to avoid this we use another condition
@@ -41,6 +41,7 @@ public class BannedFilter implements Filter {
                 && !req.getRequestURI().contains("/banned")) {
             resp.sendRedirect("/banned");
         } else {
+            System.console().writer().println("Ip : " + request.getRemoteAddr());
             filterChain.doFilter(req, resp);
         }
     }
