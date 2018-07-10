@@ -41,7 +41,6 @@ public class BannedFilter implements Filter {
                 && !req.getRequestURI().contains("/banned")) {
             resp.sendRedirect("/banned");
         } else {
-            System.console().writer().println("Ip : " + request.getRemoteAddr());
             filterChain.doFilter(req, resp);
         }
     }
