@@ -6,6 +6,7 @@
 package com.lfa.servlet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,9 +23,10 @@ public class BannedServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
-        request.
-                getRequestDispatcher("/WEB-INF/views/banned.jsp")
-                .forward(request, response);
+        response.getWriter().println("Ip add: " + request.getRemoteAddr());
+//        request.
+//                getRequestDispatcher("/WEB-INF/views/banned.jsp")
+//                .forward(request, response);
     }
 
 }
