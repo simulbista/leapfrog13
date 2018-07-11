@@ -23,10 +23,11 @@ public class BannedServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
-//        response.getWriter().println("Ip add: " + request.getRemoteAddr());
-        request.
-                getRequestDispatcher("/WEB-INF/views/banned.jsp")
-                .forward(request, response);
+//        just checking what ip address is returned at browser
+        response.getWriter().println("Ip add: " + request.getRemoteAddr());
+//        request.
+//                getRequestDispatcher("/WEB-INF/views/banned.jsp")
+//                .forward(request, response);
     }
 
 }
